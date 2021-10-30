@@ -28,16 +28,4 @@ public class TaxiFareConfiguration {
 
         return kieServices.newKieContainer(kieModule.getReleaseId());
     }
-
-    public KieContainer kieContainerForExcel() {
-        KieServices kieServices = KieServices.Factory.get();
-
-        KieFileSystem kieFileSystem = kieServices.newKieFileSystem();
-        kieFileSystem.write(ResourceFactory.newClassPathResource(drlFile));
-        KieBuilder kieBuilder = kieServices.newKieBuilder(kieFileSystem);
-        kieBuilder.buildAll();
-        KieModule kieModule = kieBuilder.getKieModule();
-
-        return kieServices.newKieContainer(kieModule.getReleaseId());
-    }
 }
