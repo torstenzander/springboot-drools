@@ -1,0 +1,20 @@
+package de.tzander.springbootdrools.rules;
+global de.tzander.springbootdrools.FareFact rideFare;
+import de.tzander.springbootdrools.TaxiRideFact ;
+dialect  "mvel"
+
+rule "Calculate Taxi Fare - Short Distance"
+    when
+        taxiRideInstance:TaxiRideFact(nightSurcharge == false && distanceInMile < 10);
+    then
+      	rideFare.setNightSurcharge(0L);
+       	rideFare.setRideFare(70L);
+end
+
+rule "Calculate Taxi Fare - Long Distance"
+    when
+        taxiRideInstance:TaxiRideFact(nightSurcharge == false && distanceInMile > 10);
+    then
+      	rideFare.setNightSurcharge(0L);
+       	rideFare.setRideFare(50L);
+end
