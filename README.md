@@ -1,4 +1,4 @@
-#Springboot Drools Example
+# Springboot Drools Example
 
 Example from https://www.baeldung.com/drools-spring-integration
 
