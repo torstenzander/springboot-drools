@@ -6,14 +6,6 @@ public class TaxiRideFact {
 
     private Long distanceInMile;
 
-    public TaxiRideFact() {
-    }
-
-    public TaxiRideFact(Boolean isNightSurcharge, Long distanceInMile) {
-        this.isNightSurcharge = isNightSurcharge;
-        this.distanceInMile = distanceInMile;
-    }
-
     public Boolean getNightSurcharge() {
         return isNightSurcharge;
     }
