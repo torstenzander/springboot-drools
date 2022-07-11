@@ -1,6 +1,6 @@
 package de.tzander.springbootdrools.rules;
-global de.tzander.springbootdrools.FareFact rideFare;
-import de.tzander.springbootdrools.TaxiRideFact ;
+global de.tzander.springbootdrools.facts.FareFact rideFare;
+import de.tzander.springbootdrools.facts.TaxiRideFact ;
 dialect  "mvel"
 
 rule "Calculate Taxi Fare - Short Distance"

@@ -1,4 +1,4 @@
-package de.tzander.springbootdrools;
+package de.tzander.springbootdrools.config;
 
 import org.kie.api.builder.KieBuilder;
 import org.kie.api.builder.KieFileSystem;

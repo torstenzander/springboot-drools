@@ -1,5 +1,7 @@
-package de.tzander.springbootdrools;
+package de.tzander.springbootdrools.service;
 
+import de.tzander.springbootdrools.facts.FareFact;
+import de.tzander.springbootdrools.facts.TaxiRideFact;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;

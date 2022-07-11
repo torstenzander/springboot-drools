@@ -14,9 +14,9 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	implementation 'org.kie:kie-spring:7.68.0.Final'
-	implementation 'org.drools:drools-core:7.68.0.Final'
-	implementation 'org.drools:drools-decisiontables:7.68.0.Final'
+	implementation 'org.kie:kie-spring:7.72.0.Final'
+	implementation 'org.drools:drools-core:7.72.0.Final'
+	implementation 'org.drools:drools-decisiontables:7.72.0.Final'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation "org.springframework.boot:spring-boot-test"

@@ -1,5 +1,8 @@
 package de.tzander.springbootdrools;
 
+import de.tzander.springbootdrools.facts.FareFact;
+import de.tzander.springbootdrools.facts.TaxiRideFact;
+import de.tzander.springbootdrools.service.TaxiFareCalculatorService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

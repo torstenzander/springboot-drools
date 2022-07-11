@@ -1,4 +1,4 @@
-package de.tzander.springbootdrools;
+package de.tzander.springbootdrools.facts;
 
 public class TaxiRideFact {
 
