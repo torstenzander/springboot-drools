@@ -14,7 +14,7 @@ public class TaxiFareCalculatorServiceIT {
     private TaxiFareCalculatorService taxiFareCalculatorService;
 
     @Test
-    public void whenNightSurchargeFalseAndDistanceLessThan10_thenFixWithoutNightSurcharge() {
+    public void shouldFareWithoutNighchargeWhenNightSurchargeFalseAndDistanceLessThan10() {
         TaxiRideFact taxiRide = new TaxiRideFact();
         taxiRide.setNightSurcharge(false);
         taxiRide.setDistanceInMile(9L);
@@ -26,7 +26,7 @@ public class TaxiFareCalculatorServiceIT {
     }
 
     @Test
-    public void whenNightSurchargeFalseAndDistanceMoreThan10_thenFixWithoutNightSurcharge() {
+    public void shouldFareWithoutNighchargeWhenNightSurchargeFalseAndDistanceLessMoreThan10() {
         TaxiRideFact taxiRide = new TaxiRideFact();
         taxiRide.setNightSurcharge(false);
         taxiRide.setDistanceInMile(11L);
